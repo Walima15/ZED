@@ -1,0 +1,155 @@
+:root {
+    --primary: #008a4f; /* Zambian Green */
+    --primary-dark: #00663a;
+    --accent: #ef7d00; /* Zambian Orange */
+    --bg: #121212;
+    --card-bg: #1e1e1e;
+    --text: #ffffff;
+    --text-muted: #aaaaaa;
+    --danger: #d32f2f;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 480px;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: var(--text-muted);
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.balance-display {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#balance-amount {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.currency {
+    color: var(--accent);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.address-display {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    word-break: break-all;
+    background: rgba(255,255,255,0.05);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background: #2a2a2a;
+    color: var(--text);
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.1s, opacity 0.2s;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.primary {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: white;
+}
+
+.success {
+    background: linear-gradient(135deg, var(--accent), #d66c00);
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.divider {
+    height: 1px;
+    background: #333;
+    margin: 20px 0;
+}
+
+h3 {
+    margin-bottom: 15px;
+    color: var(--text);
+}
+
+.status-area p {
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.1);
+}

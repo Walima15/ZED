@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zambian ZMW Wallet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>ZMW Wallet</h1>
+            <p class="subtitle">Zambian Stablecoin on Stellar</p>
+        </header>
+
+        <section class="card balance-card">
+            <h2>Your Balance</h2>
+            <div class="balance-display">
+                <span id="balance-amount">---</span>
+                <span class="currency">ZMW</span>
+            </div>
+            <p id="public-key-display" class="address-display">Not Connected</p>
+        </section>
+
+        <section class="card actions-card">
+            <div class="input-group">
+                <label for="secret-key">Secret Key (for demo)</label>
+                <input type="password" id="secret-key" placeholder="S..." />
+            </div>
+            
+            <button id="connect-btn" class="btn primary">Access Wallet</button>
+
+            <div id="transfer-area" class="hidden">
+                <div class="divider"></div>
+                <h3>Send Money</h3>
+                <div class="input-group">
+                    <label for="destination-address">Destination Address (Public Key)</label>
+                    <input type="text" id="destination-address" placeholder="G..." />
+                </div>
+                <div class="input-group">
+                    <label for="amount">Amount</label>
+                    <input type="number" id="amount" placeholder="0.00" />
+                </div>
+                <button id="send-btn" class="btn success">Send ZMW</button>
+            </div>
+        </section>
+
+        <section id="status-area" class="status-area hidden">
+            <p id="status-message"></p>
+        </section>
+    </div>
+    <script type="module" src="/app.js"></script>
+</body>
+</html>
